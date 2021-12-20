@@ -1,13 +1,23 @@
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js Assign 3</title>
-</head>
-<body>
-    <script src="Q7.js"></script>
-</body>
+<html>
+    <head>
+        <title>Program 7</title>
+        <script>
+            var name = '{ "person" : [' +
+                            '{ "firstName":"John" , "lastName":"Doe" },' +
+                            '{ "firstName":"Anna" , "lastName":"Smith" }]}';
+            // JSON.parse() to convert the string into a JavaScript object
+            var nameObj=JSON.parse(name);
+            document.write(nameObj.person[0].firstName);
+            document.write("&nbsp;");
+            document.write(nameObj.person[0].lastName);
+            document.write("<br>");
+            document.write(nameObj.person[1].firstName);
+            document.write("&nbsp;");
+            document.write(nameObj.person[1].lastName);
+        </script>
+    </head>
+    <body>
+        
+    </body>
 </html>
